@@ -4,7 +4,7 @@ import { Window, TitleBar, Text } from "react-desktop/macOs";
 const Editor = ({ text, setText }) => {
   return (
     <div>
-      <Window chrome width="45vw" height="51.5vh" padding="0%">
+      <Window chrome width="45vw" height="49.4vh" padding="0%">
         <TitleBar title="Editor" controls />
         <Text>
           <textarea

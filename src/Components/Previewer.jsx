@@ -5,7 +5,7 @@ import { Window, TitleBar, Text } from "react-desktop/macOs";
 const Previewer = ({ text }) => {
   return (
     <div>
-      <Window chrome width="45vw" height="51.5vh" padding="1%">
+      <Window chrome width="45vw" height="49.4vh" padding="0%">
         <TitleBar title="Previewer" controls />
         <Text
           id="preview"
