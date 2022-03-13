@@ -9,6 +9,7 @@ const Editor = ({ text, setText }) => {
         <Text>
           <textarea
             id="editor"
+            placeholder="Type here"
             onChange={(e) => setText(e.target.value)}
             value={text}
           ></textarea>
