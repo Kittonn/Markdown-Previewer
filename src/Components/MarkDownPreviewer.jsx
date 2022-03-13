@@ -9,7 +9,7 @@ const MarkDownPreviewer = () => {
     setText(startText);
   }, []);
   return (
-    <div>
+    <div id="container">
       <Editor setText={setText} text={text} />
       <Previewer text={text} />
     </div>

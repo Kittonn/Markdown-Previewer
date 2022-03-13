@@ -1,14 +1,19 @@
 import React from "react";
+import { Window, TitleBar, Text } from "react-desktop/macOs";
 
 const Editor = ({ text, setText }) => {
   return (
     <div>
-      <textarea
-        onChange={(e) => setText(e.target.value)}
-        value={text}
-        cols="100"
-        rows="25"
-      ></textarea>
+      <Window chrome width="40%" height="50%" padding="0%">
+        <TitleBar title="Editor" controls />
+        <Text>
+          <textarea
+            id="editor"
+            onChange={(e) => setText(e.target.value)}
+            value={text}
+          ></textarea>
+        </Text>
+      </Window>
     </div>
   );
 };
