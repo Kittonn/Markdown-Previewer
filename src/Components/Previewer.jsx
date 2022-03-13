@@ -5,9 +5,10 @@ import { Window, TitleBar, Text } from "react-desktop/macOs";
 const Previewer = ({ text }) => {
   return (
     <div>
-      <Window chrome width="40%" height="50%" padding="0%">
+      <Window chrome width="45vw" height="51.5vh" padding="1%">
         <TitleBar title="Previewer" controls />
-        <Text id="preview"
+        <Text
+          id="preview"
           dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(marked(text)) }}
         ></Text>
       </Window>
