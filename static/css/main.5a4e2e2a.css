@@ -1,0 +1,2 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);*{box-sizing:border-box;font-family:Poppins,sans-serif;margin:0;padding:0}#footer,#navbar{background-color:#03045e;color:#fff;height:6vh;padding:.25rem;text-align:center;width:100vw}#container{align-items:center;background-color:#caf0f8;color:#fff;display:flex;flex-wrap:wrap;height:88vh;justify-content:space-around;width:100%}a{color:#fff;text-decoration:none}#editor,#preview{height:46.8vh;overflow:scroll;width:45vw}textarea{resize:none}
+/*# sourceMappingURL=main.5a4e2e2a.css.map*/
