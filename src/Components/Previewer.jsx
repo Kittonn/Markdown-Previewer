@@ -2,6 +2,10 @@ import React from "react";
 import { marked } from "marked";
 import DOMPurify from "dompurify";
 import { Window, TitleBar, Text } from "react-desktop/macOs";
+
+marked.setOptions({
+  breaks: true,
+});
 const Previewer = ({ text }) => {
   return (
     <div>
