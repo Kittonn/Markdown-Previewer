@@ -1,36 +1,42 @@
-export const startText = `# Welcome to my React Markdown Previewer!
+export const startText = `# Sample Markdown Header Level
 
-## This is a sub-heading...
-### And here's some other cool stuff:
+## Sample Header Level 2
 
-Heres some code, between 2 backticks.
+### Link
 
-\`\`\`Hello\`\`\`
+Here's a link to [Codepen](https://codepen.io).
 
-You can also make text **bold**... whoa!
-Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
+### Code Block
 
-There's also [links](https://www.freecodecamp.org), and
-> Block Quotes!
+1.  Open the file.
+2.  Find the following code block on line 21:
 
-And if you want to get really crazy, even tables:
+        <html>
+          <head>
+            <title>Test</title>
+          </head>
 
-Wild Header | Crazy Header | Another Header?
------------- | ------------- | -------------
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
+3.  Update the title to match the name of your website.
 
-- And of course there are lists.
-  - Some are bulleted.
-     - With different indentation levels.
-        - That look like this.
+### Inline Code
 
+I think you should use an \`<addr>\` element here instead.
 
-1. And there are numbered lists too.
-1. Use just 1s if you want!
-1. And last but not least, let's not forget embedded images:
+### List
 
-![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+- First item
+- Second item
+
+### Blockquote
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+
+### Image
+
+![Markdown Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png "Markdown Logo")
+
+### Bold Text
+
+I just love **bold text**.
 `;
+
