@@ -1,7 +1,10 @@
 import React from "react";
 import { Window, TitleBar, Text } from "react-desktop/macOs";
-
-const Editor = ({ text, setText }) => {
+import { useSelector, useDispatch } from "react-redux";
+import { textActions } from "../store/text-slice";
+const Editor = () => {
+  const { text } = useSelector((state) => state.text);
+  const dispatch = useDispatch();
   return (
     <div>
       <Window chrome width="45vw" height="49.4vh" padding="0%">
@@ -10,7 +13,7 @@ const Editor = ({ text, setText }) => {
           <textarea
             id="editor"
             placeholder="Type here"
-            onChange={(e) => setText(e.target.value)}
+            onChange={(e) => dispatch(textActions.newText(e.target.value))}
             value={text}
           ></textarea>
         </Text>

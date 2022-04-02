@@ -1,17 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { startText } from "../startText";
+import React from "react";
+
 import Editor from "./Editor";
 import Previewer from "./Previewer";
 
 const MarkDownPreviewer = () => {
-  const [text, setText] = useState("");
-  useEffect(() => {
-    setText(startText);
-  }, []);
   return (
     <div id="container">
-      <Editor setText={setText} text={text} />
-      <Previewer text={text} />
+      <Editor />
+      <Previewer />
     </div>
   );
 };
